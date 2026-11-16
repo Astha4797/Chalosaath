@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ChaloSaath</title>
+<meta name="description" content="ChaloSaath — safe solo travel companion for Jibhi & Tirthan Valley.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+  :root { --bg: #e9edf2; --frame: #0f1115; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #15181d; --frame: #000; } }
+  html, body { margin: 0; height: 100%; background: var(--bg); }
+  body { display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .phone {
+    position: relative; width: 390px; height: 844px; flex: none;
+    padding: 12px; border-radius: 56px; background: var(--frame);
+    box-shadow: 0 30px 80px -20px rgba(15,23,42,.45), inset 0 0 0 2px #2a2d33;
+    transform-origin: center center;
+  }
+  iframe { display: block; width: 100%; height: 100%; border: 0; border-radius: 44px; background: #f7f9fb; }
+  /* On an actual phone-width screen, drop the frame and go full screen */
+  @media (max-width: 600px) {
+    body { display: block; }
+    .phone { width: 100%; height: 100%; padding: 0; border-radius: 0; box-shadow: none; background: none; transform: none !important; }
+    iframe { border-radius: 0; }
+  }
+</style>
+</head>
+<body>
+  <div class="phone" id="phone">
+    <iframe id="app" title="ChaloSaath app" allow="geolocation; microphone; clipboard-write; web-share"></iframe>
+  </div>
+<script>
+  (function () {
+    var allowed = ['/', '/meetups.html', '/safety.html'];
+    var start = location.hash.slice(1);
+    if (allowed.indexOf(start) === -1) start = '/';
+    var frame = document.getElementById('app');
+    frame.src = start + '?t=' + Date.now(); // always load the latest build
+
+    // Keep the address bar in sync so refresh / share lands on the same tab
+    frame.addEventListener('load', function () {
+      try {
+        var p = frame.contentWindow.location.pathname;
+        if (allowed.indexOf(p) !== -1) history.replaceState(null, '', '/phone.html#' + p);
+        document.title = frame.contentDocument.title || 'ChaloSaath';
+      } catch (e) {}
+    });
+
+    // Scale the phone down on short laptop screens
+    var phone = document.getElementById('phone');
+    function fit() {
+      if (innerWidth <= 600) { phone.style.transform = ''; return; }
+      var s = Math.min(1, (innerHeight - 32) / 868, (innerWidth - 32) / 414);
+      phone.style.transform = 'scale(' + s + ')';
+    }
+    addEventListener('resize', fit); fit();
+  })();
+</script>
+</body>
+</html>

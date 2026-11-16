@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+
+# Environment and local secrets
+.env
+.env.*
+*.pem
+*.key
+*.cert
+secrets.*
+
+# Firebase local cache
+.firebase/
+firebase-debug.log*
+
+# OS and editor files
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+__pycache__/
+
+# Logs
+*.log
+
+# Not part of the app: product docs, the PRD dashboard and early prototypes
+Saathi_PRD.docx
+Saathi_PRD_extracted.txt
+prd.html
+prd_data.js
+app.js
+design_tokens.js
+styles.css
+privacy.html
+sitemap.xml
+og-image.svg
+alpine_expedition/
+solo_haven/
+right_now_discovery_swipe_hub/
+meetups_local_beacons/
+safety_profile_hub/
+
+# Earlier Cloud Run setup (the app is hosted on Firebase)
+Dockerfile
+.dockerignore
+app.yaml
+cloudbuild.yaml
+deploy-gcp.sh
+start.sh
+server.py

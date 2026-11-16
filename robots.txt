@@ -1,0 +1,6 @@
+# robots.txt for Saathi (ChaloSaath)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://chalosaath.in/sitemap.xml

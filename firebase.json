@@ -1,0 +1,85 @@
+{
+  "hosting": {
+    "public": ".",
+    "cleanUrls": false,
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      ".firebase/**",
+      "**/.*",
+      "**/node_modules/**",
+      "Dockerfile",
+      "app.yaml",
+      "cloudbuild.yaml",
+      "deploy-gcp.sh",
+      "start.sh",
+      "server.py",
+      "Saathi_PRD_extracted.txt",
+      "Saathi_PRD.docx",
+      "prd.html",
+      "app.js",
+      "prd_data.js",
+      "design_tokens.js",
+      "styles.css",
+      "privacy.html",
+      "sitemap.xml",
+      "og-image.svg",
+      "alpine_expedition/**",
+      "solo_haven/**",
+      "right_now_discovery_swipe_hub/**",
+      "meetups_local_beacons/**",
+      "safety_profile_hub/**",
+      "**/DESIGN.md",
+      "**/__pycache__/**",
+      "deploy.sh",
+      "build/**",
+      "img/credits.json",
+      "README.md"
+    ],
+    "headers": [
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      },
+      {
+        "source": "**/*.@(html|js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      },
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "X-Frame-Options",
+            "value": "SAMEORIGIN"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "camera=(), microphone=(self), geolocation=(self)"
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com https://fonts.gstatic.com; frame-src 'self' blob: https://www.openstreetmap.org; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https:;"
+          }
+        ]
+      }
+    ]
+  }
+}
