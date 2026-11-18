@@ -1,8 +1,8 @@
 # ChaloSaath
 
-**A safety-first companion app for solo travellers in the Himalayas.**
+**A safety-first companion app for solo travellers, wherever they are.**
 
-ChaloSaath ("let's go together") helps people travelling alone find places worth going to right now, meet other verified travellers nearby, and stay safe while they do it. The demo is set in Jibhi and the Tirthan Valley, Himachal Pradesh.
+ChaloSaath ("let's go together") helps people travelling alone find places worth going to right now, meet other verified travellers nearby, and stay safe while they do it. Everything adapts to where the traveller is right now. In the demo, that's Jibhi in Himachal Pradesh.
 
 **Live app:** https://chalosaath-4797.web.app
 
