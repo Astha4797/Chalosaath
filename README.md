@@ -6,7 +6,7 @@ ChaloSaath ("let's go together") helps people travelling alone find places worth
 
 **Live app:** https://chalosaath-4797.web.app
 
-Built at the **Hack2skill × Google AI Bootcamp** in Gurgaon (13 November 2026), under the guidance of **Brahmjit Singh**.
+Built at the [**Build with AI Bootcamp**](https://promptwars.in/bootcamp.html) by Hack2skill and Google for Developers in Gurugram (13 November 2026), under the guidance of **Brahmjit Singh**.
 
 <p align="center">
   <img src="screenshots/right-now.png" width="260" alt="Right Now: swipe to discover spots">&nbsp;
@@ -94,7 +94,7 @@ To deploy to Firebase Hosting, which runs the build and then deploys:
 
 ## Acknowledgements
 
-- **Hack2skill** and the **Google AI Bootcamp** for the programme.
+- **Hack2skill** and **Google for Developers** for the Build with AI Bootcamp.
 - **Brahmjit Singh** for mentorship and guidance throughout the project.
 
 ### Photo credits
