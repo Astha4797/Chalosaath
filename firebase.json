@@ -34,7 +34,8 @@
       "deploy.sh",
       "build/**",
       "img/credits.json",
-      "README.md"
+      "README.md",
+      "screenshots/**"
     ],
     "headers": [
       {
