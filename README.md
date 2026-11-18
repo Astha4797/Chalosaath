@@ -46,6 +46,7 @@ Everything you do (saves, joins, chats, check-ins, settings) is stored on your d
 
 ## Built with
 
+- **Google Antigravity**, the AI agent used to build the app at the bootcamp.
 - **HTML, Tailwind CSS and vanilla JavaScript.** No framework.
 - **Tailwind compiled at build time**, so pages load fully styled with no flash.
 - **View Transitions API** for native-feeling page switches and the animated tab bar.
