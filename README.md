@@ -44,15 +44,24 @@ Everything you do (saves, joins, chats, check-ins, settings) is stored on your d
 
 ---
 
+## How it was made
+
+Made end to end with Google's AI tools:
+
+| Stage | Tools |
+|---|---|
+| **Think** | Gemini and Stitch: shaping the idea, the product spec and the screen designs |
+| **Build** | Google AI Studio and Antigravity: turning the designs into a working app |
+| **Publish** | Google Cloud: hosted on Firebase Hosting |
+
 ## Built with
 
-- **Google Antigravity**, the AI agent used to build the app at the bootcamp.
 - **HTML, Tailwind CSS and vanilla JavaScript.** No framework.
 - **Tailwind compiled at build time**, so pages load fully styled with no flash.
 - **View Transitions API** for native-feeling page switches and the animated tab bar.
 - **Pointer events** for the swipe deck (direction lock and fling speed), plus trackpad swiping.
 - **localStorage** to keep app state on the device.
-- **Firebase Hosting** (Google Cloud, free Spark plan).
+- **Firebase Hosting** on Google Cloud (free Spark plan).
 
 ## Project structure
 
